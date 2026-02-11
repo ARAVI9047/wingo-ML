@@ -15,7 +15,7 @@ from telegram.ext import (
 )
 
 # ================= CONFIG =================
-TOKEN = os.getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 #BOT_TOKEN = "8320293848:AAH7jnQttKNgwoayL1bcQwpNoww1AtyogJ8"
 CHAT_ID = "1150824427"
 API_URL = "https://draw.ar-lottery01.com/WinGo/WinGo_30S/GetHistoryIssuePage.json?ts=1770652682680"
@@ -217,4 +217,5 @@ else:
     app.job_queue.run_repeating(auto_predict, interval=60, first=10)
 
     app.run_polling()
+
 
